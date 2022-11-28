@@ -37,7 +37,6 @@ function Signup() {
     resolver: yupResolver(schema),
   });
   const registerUser = async (data) => {
-    console.log();
     const res = await axios.post(
       `${import.meta.env.VITE_API_URL}/api/auth/register`,
       data
